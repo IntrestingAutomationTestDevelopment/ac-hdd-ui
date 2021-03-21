@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="137" started-at="2021-03-21T02:55:45Z" finished-at="2021-03-21T02:55:45Z">
+    <groups>
+      <group name="regression">
+        <method signature="TestNGSample.testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample@29774679]" name="testRunner" class="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample"/>
+      </group> <!-- regression -->
+      <group name="ac_tests">
+        <method signature="TestNGSample.testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample@29774679]" name="testRunner" class="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample"/>
+      </group> <!-- ac_tests -->
+    </groups>
+    <test name="Default test" duration-ms="137" started-at="2021-03-21T02:55:45Z" finished-at="2021-03-21T02:55:45Z">
+      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample">
+        <test-method status="PASS" signature="testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample@29774679]" name="testRunner" duration-ms="24" started-at="2021-03-21T02:55:45Z" finished-at="2021-03-21T02:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

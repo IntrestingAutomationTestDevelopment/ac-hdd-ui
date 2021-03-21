@@ -1,0 +1,5 @@
+<groups>		
+   <run>		
+    <include name="regression" />		
+   </run>		
+  </groups>

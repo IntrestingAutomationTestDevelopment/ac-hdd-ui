@@ -19,6 +19,7 @@ import java.util.List;
 	
 
 	public class Action {
+		public static WebDriver driver;
 		static int maxWaitingTime = 120;
 		private static WebDriverWait wait;
 		public static void waitFor(WebDriver driver, By by) {

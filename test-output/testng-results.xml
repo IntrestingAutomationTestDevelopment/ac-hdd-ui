@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="137" started-at="2021-03-21T02:55:45Z" finished-at="2021-03-21T02:55:45Z">
+  <suite name="Default suite" duration-ms="79" started-at="2021-03-29T00:41:18Z" finished-at="2021-03-29T00:41:18Z">
     <groups>
       <group name="regression">
-        <method signature="TestNGSample.testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample@29774679]" name="testRunner" class="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample"/>
+        <method signature="TestNGRunner.testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner@343f4d3d]" name="testRunner" class="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner"/>
       </group> <!-- regression -->
       <group name="ac_tests">
-        <method signature="TestNGSample.testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample@29774679]" name="testRunner" class="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample"/>
+        <method signature="TestNGRunner.testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner@343f4d3d]" name="testRunner" class="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner"/>
       </group> <!-- ac_tests -->
     </groups>
-    <test name="Default test" duration-ms="137" started-at="2021-03-21T02:55:45Z" finished-at="2021-03-21T02:55:45Z">
-      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample">
-        <test-method status="PASS" signature="testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample@29774679]" name="testRunner" duration-ms="24" started-at="2021-03-21T02:55:45Z" finished-at="2021-03-21T02:55:45Z">
+    <test name="Default test" duration-ms="79" started-at="2021-03-29T00:41:18Z" finished-at="2021-03-29T00:41:18Z">
+      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner">
+        <test-method status="FAIL" signature="testRunner()[pri:0, instance:org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner@343f4d3d]" name="testRunner" duration-ms="18" started-at="2021-03-29T00:41:18Z" finished-at="2021-03-29T00:41:18Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.po.HomePage.loginFunctionality(HomePage.java:20)
+at org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestHomePage.qa(TestHomePage.java:14)
+at org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner.testRunner(TestNGRunner.java:10)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRunner -->
-      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGSample -->
+      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

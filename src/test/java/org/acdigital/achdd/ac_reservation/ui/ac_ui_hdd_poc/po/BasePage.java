@@ -73,7 +73,11 @@ public class BasePage implements Config{
             throw new IllegalStateException("This is not " + searchString + " .The actual Url is: " + getUrl()+"::"+driver.getTitle());
         }
     }
-
+    /**
+     * TakeScreenShotMethodOnFail
+     * @param e
+     * @param fileName
+     */
     protected void takeScreenshot(RuntimeException e, String fileName) {
         File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {

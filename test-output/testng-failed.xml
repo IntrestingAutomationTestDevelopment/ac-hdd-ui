@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner">
+      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestGroupRun">
         <methods>
-          <include name="testRunner"/>
+          <include name="afterSuite1"/>
+          <include name="beforeSuite1"/>
+          <include name="beforeMethod"/>
+          <include name="groupTest"/>
+          <include name="AfterMethod"/>
         </methods>
-      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestNGRunner -->
+      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestGroupRun -->
+      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestObjectForClassPage">
+        <methods>
+          <include name="method1"/>
+        </methods>
+      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestObjectForClassPage -->
+      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="qa"/>
+        </methods>
+      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.TestHomePage -->
+      <class name="org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.MentionPrirityAndGroup">
+        <methods>
+          <include name="crp"/>
+          <include name="stg"/>
+          <include name="qa"/>
+          <include name="dev"/>
+          <include name="qaEngineer"/>
+          <include name="brk"/>
+          <include name="qaEngineer2"/>
+          <include name="itst"/>
+        </methods>
+      </class> <!-- org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.selenium.MentionPrirityAndGroup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

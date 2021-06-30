@@ -1,18 +1,27 @@
 package org.acdigital.achdd.ac_reservation.ui.ac_ui_hdd_poc.po; 
 	import static org.junit.Assert.fail;
 
+import java.io.File;
 import java.util.List;
 	import java.util.Random;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.Select;
 	import org.openqa.selenium.support.ui.WebDriverWait;
-	import org.openqa.selenium.Alert;
+import org.apache.commons.io.FileUtils;
+import org.bson.io.OutputBuffer;
+import org.omg.PortableInterceptor.USER_EXCEPTION;
+import org.openqa.selenium.Alert;
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.JavascriptExecutor;
 	import org.openqa.selenium.NoAlertPresentException;
 	import org.openqa.selenium.NoSuchElementException;
-	import org.openqa.selenium.StaleElementReferenceException;
-	import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.interactions.Actions;
@@ -22,6 +31,41 @@ import java.util.List;
 		public static WebDriver driver;
 		static int maxWaitingTime = 120;
 		private static WebDriverWait wait;
+		
+		public static String getTitleofWebpage(WebDriver driver) {
+			String pageTitleString = driver.getTitle();
+			return pageTitleString;
+		}
+		public static void getAlltheLinks() {
+			List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+				for(WebElement ele:allLinks) {
+					String linktextName= ele.getAttribute("href");
+					System.out.println("test: LinkTexts data"+linktextName);
+				}
+		}
+		public static void ImplicitWaitKSRA(WebDriver driver) {
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		}
+		public static void ExplicitWaitKSRA(WebDriver driver,By by) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+		//ele.click();
+		}
+		public static void windowsHandlingKSRA(WebDriver driver) {
+			String parentWindow = driver.getWindowHandle();
+			for(String childWindows : driver.getWindowHandles()) {
+				driver.switchTo().window(childWindows);
+			}
+		}
+		public static void frameHandlingKSRA(WebDriver driver) {
+			String frame = driver.getWindowHandle();
+			for(String childWindows : driver.getWindowHandles()) {
+				driver.switchTo().frame(frame);
+				/**
+				 * SwitchToFrameByItsNameORID
+				 */
+			}
+		}
 		public static void waitFor(WebDriver driver, By by) {
 
 			WebDriverWait wdw = new WebDriverWait(driver,60);
@@ -29,6 +73,7 @@ import java.util.List;
 			waitTill();
 		}
 		 
+		
 		public static void waitForVisible(WebDriver driver, By by) {
 			WebElement elm = getWebElement(driver, by);
 			WebDriverWait wdw = new WebDriverWait(driver, maxWaitingTime);
@@ -384,10 +429,5 @@ import java.util.List;
 		    ((JavascriptExecutor) driver).executeScript(
 		            "arguments[0].scrollIntoView();", element);
 		}
-		 /* public static void waitForpresence(WebDriver driver, WebElement element) {
-			  
-		 
-		  WebDriverWait wait = new WebDriverWait(driver, waitTime);
-		  wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-		  }*/
-}
+	
+	}

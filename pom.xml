@@ -1,5 +1,7 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.acdigital.hdd.preservation.ui</groupId>
   <artifactId>presrvation-ui-hdd-poc</artifactId>
@@ -13,47 +15,63 @@
     <maven.compiler.target>1.6</maven.compiler.target>
      <aspectj.version>1.8.10</aspectj.version>
   </properties>
-  <dependencies>
+ <dependencies>
     <dependency>
-		<groupId>org.testng</groupId>
-		<artifactId>testng</artifactId>
-		<version>6.14.3</version>
-	</dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>3.141.59</version>
-    </dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>3.9</version>
-		</dependency>
-    <dependency>
-      <groupId>com.saucelabs</groupId>
-      <artifactId>saucerest</artifactId>
-      <version>1.0.35</version>
-      <scope>test</scope>
-    </dependency>
-         <dependency>
-    	<groupId>org.seleniumhq.selenium</groupId>
-    	<artifactId>selenium-firefox-driver</artifactId>
-    	<version>3.8.1</version>
+	<groupId>org.testng</groupId>
+	<artifactId>testng</artifactId>
+	<version>6.14.3</version>
+</dependency>
+	<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
+		<version>3.141.59</version>
 	</dependency>
 	<dependency>
-    <groupId>org.apache.directory.studio</groupId>
-    <artifactId>org.apache.commons.io</artifactId>
-    <version>2.4</version>
-</dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi</artifactId>
+		<version>3.9</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml</artifactId>
+		<version>3.9</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml-schemas</artifactId>
+		<version>3.9</version>
+	</dependency>
+	<dependency>
+		<groupId>com.saucelabs</groupId>
+		<artifactId>saucerest</artifactId>
+		<version>1.0.35</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-firefox-driver</artifactId>
+		<version>3.8.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.directory.studio</groupId>
+		<artifactId>org.apache.commons.io</artifactId>
+		<version>2.4</version>
+	</dependency>
+	<dependency>
+		<groupId>com.relevantcodes</groupId>
+		<artifactId>extentreports</artifactId>
+		<version>2.41.2</version>
+	</dependency>
+	<dependency>
+		<groupId>io.rest-assured</groupId>
+		<artifactId>rest-assured</artifactId>
+		<version>4.3.2</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.googlecode.json-simple</groupId>
+		<artifactId>json-simple</artifactId>
+		<version>1.1.1</version>
+	</dependency>
   </dependencies>
 </project>
